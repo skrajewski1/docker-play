@@ -11,8 +11,8 @@ resource "aws_security_group" "web-sg" {
   ingress {
     description = "ingress port "
     #from_port   = ingress.value
-    from_port   = 8000
-    to_port     = 8100
+    from_port   = 3000
+    to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
 
